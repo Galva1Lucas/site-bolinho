@@ -1223,8 +1223,8 @@
   .modal-content {
     background: var(--white);
     border-radius: 12px;
-    padding: 40px 32px;
-    max-width: 520px;
+    padding: 24px 20px;
+    max-width: 380px;
     width: 90%;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     animation: slideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -1244,19 +1244,19 @@
   }
 
   .modal-title {
-    font-size: clamp(1.5rem, 5vw, 1.9rem);
+    font-size: clamp(1.3rem, 5vw, 1.6rem);
     font-weight: 800;
     color: var(--red-dark);
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     line-height: 1.2;
   }
 
   .modal-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--text-mid);
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     font-weight: 500;
   }
 
@@ -1264,9 +1264,9 @@
     background: #FFF3E0;
     border: 2px solid #FFE0B2;
     border-radius: 10px;
-    padding: 20px;
+    padding: 16px;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 
   .modal-price-old {
@@ -1277,7 +1277,7 @@
   }
 
   .modal-price-new {
-    font-size: clamp(1.8rem, 6vw, 2.4rem);
+    font-size: clamp(1.5rem, 5vw, 2rem);
     font-weight: 800;
     color: var(--green);
     margin-bottom: 4px;
@@ -1293,17 +1293,17 @@
 
   .modal-list {
     list-style: none;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
 
   .modal-list li {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 0.95rem;
+    gap: 8px;
+    font-size: 0.85rem;
     color: var(--text-dark);
     font-weight: 600;
   }
@@ -1479,7 +1479,7 @@
 <!-- ========== OFERTAS — TOPO ========== -->
 <section class="offers offers-early" id="ofertas-topo">
   <div class="offers-inner">
-    <p class="section-label" style="text-align:center;">Escolha a melhor opção para você</p>
+    <p class="section-label" style="text-align:center;"></p>
     <h2>Escolha a melhor opção para você</h2>
     <p class="offers-sub">Depois do pagamento, o acesso é enviado automaticamente para o seu e-mail. Comece hoje mesmo.</p>
 
@@ -1884,15 +1884,12 @@
 
   function fecharModalEComprar() {
     // Aqui você pode redirecionar para a página de checkout da oferta de R$19,90
-    alert('Redirecionando para checkout de R$19,90...');
-    // window.location.href = 'https://seu-link-de-checkout-19-90';
-    fecharModal();
+    window.location.href = 'https://go.perfectpay.com.br/PPU38CQ85R6';
   }
 
   function fecharModalEContinuar() {
     // Fecha o modal e continua com a compra de R$10
-    // window.location.href = 'https://seu-link-de-checkout-10';
-    fecharModal();
+    window.location.href = 'https://go.perfectpay.com.br/PPU38CQ85R9';
   }
 
   // Fechar modal ao clicar fora dele (no overlay)
