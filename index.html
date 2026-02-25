@@ -1331,6 +1331,30 @@
     line-height: 1.6;
   }
 
+  .modal-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--gray);
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+
+  .modal-close-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-dark);
+  }
+
   .modal-buttons {
     display: flex;
     flex-direction: column;
@@ -1832,6 +1856,7 @@
 <!-- ========== MODAL DOWNSELL ========== -->
 <div class="modal-overlay" id="modalDownsell">
   <div class="modal-content">
+    <button class="modal-close-btn" onclick="fecharModal()">✕</button>
     <h2 class="modal-title">🚨 ESPERA! OFERTA ESPECIAL SÓ AGORA</h2>
     <p class="modal-subtitle">Você tem certeza que quer levar só a receita?</p>
 
